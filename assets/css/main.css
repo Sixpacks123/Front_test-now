@@ -1,0 +1,39 @@
+:root{
+    --color-dark: #000000;
+    --color-gray: #333333;
+    --color-mid-gray: #666;
+    --color-light-gray: #EEEEEE;
+    --color-dark-red: #88362D;
+    --color-red: #A82E07;
+    --color-salmon: #F5683B;
+    --color-dark-cyan: #3BF5C6;
+    --color-cyan: #57FFD5;
+    --color-green: #1BC298;
+    --background: #F9FAFA;
+    --color-white: #fbfbfb;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../font/raleway/Raleway-Bold.ttf");
+    src: url("../font/raleway/Raleway-Regular.ttf");
+    src: url("../font/raleway/Raleway-SemiBold.ttf");
+    src: url("../font/raleway/Raleway-Light.ttf");
+    src: url("../font/raleway/Raleway-Medium.ttf");
+}
+
+.font-police {
+    font-family: "Raleway";
+}
+
+.page-container{
+    width: calc(100% - 20px);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
