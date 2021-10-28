@@ -34,4 +34,6 @@ export default {
 .card:active{
 border: 2px solid green;
 }
+
+
 </style>

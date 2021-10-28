@@ -9,17 +9,17 @@
 <style scoped>
 .container-nav {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 3rem;
-  top: 0;
+  padding:10px;
+
 
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
   .container-nav {
-    flex-direction: column;
-    padding: 2rem 2rem;
+    flex-direction: row;
+    padding: 2rem  2rem;
   }
 }
 </style>

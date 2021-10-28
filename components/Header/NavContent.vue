@@ -34,7 +34,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 2px 2px;
+    padding: 20px 0;
     font-size: 1em;
 }
 

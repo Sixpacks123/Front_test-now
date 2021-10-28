@@ -44,4 +44,27 @@
     font-family: "Raleway";
     font-weight: 600;
     letter-spacing: 1px;
+    font-size: 0.9em;
 }
+
+
+h2{
+    font-size: 1.6em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--color-gray);
+    padding: 20px 0px;
+}
+
+p{
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    margin: auto auto 20px;
+    color: var(--color-gray);
+}
+
+@media screen and (min-width: 600px) {
+   h2{
+       font-size: 1.6em;
+   }
+  }

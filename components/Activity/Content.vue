@@ -50,6 +50,7 @@ export default {
 <style scoped>
 section{
     width: 100vw;
+    height: auto;
     max-width: 100vw;
     position: relative;
     background-color: var(--background);
@@ -63,6 +64,7 @@ section{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 </style>
