@@ -63,14 +63,31 @@ p{
     color: var(--color-gray);
 }
 
+h3{
+    font-size: 1.1em;
+    font-weight:500 ;
+    letter-spacing: 1px;
+    color: var(--color-dark-red);
+    padding: 20px 0px;
+}
+
 @media screen and (min-width: 600px) {
    h2{
        font-size: 1.6em;
    }
   }
 
-  .nav-link{
-      display: flex;
-      flex-direction: column;
-      padding-right: 200px;
-  }
+.nav-link{
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+}
+.nav-link-a{
+    font-weight: 300;
+    font-size: .8em;
+    margin-bottom: 20px;
+}
+
+.nav-link-a:hover{
+    color: var(--color-dark-red);
+}
