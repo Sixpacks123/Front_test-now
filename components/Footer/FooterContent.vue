@@ -7,13 +7,14 @@
                 <!--About-->
                 <FooterAbout/>
             </div>
-                
-        
-                <!--Newsletter-->
-                <FooterNewsletter/>
+            <!--Newsletter-->
+            <FooterNewsletter/>
         </div>
     </footer>
 </template>
+<script>
+</script>
+
 <style scoped>
 .content-navigation{
     display: flex;

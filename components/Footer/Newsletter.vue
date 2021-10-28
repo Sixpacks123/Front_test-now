@@ -4,10 +4,10 @@
         <div class="content-news">
             <input class="input-news font-police" type="text" placeholder="Adresse Email"/>
             <div class="icon-news">
-                <font-awesome-icon :icon="['fas', 'mail-bulk']"/>
-                <font-awesome-icon :icon="['fas', 'facebook']"/>
-                <font-awesome-icon :icon="['fas', 'mail-bulk']"/>
-                <font-awesome-icon :icon="['fas', 'mail-bulk']"/>
+                <font-awesome-icon class="icon" :icon="['fas', 'bed']"/>
+                <font-awesome-icon class="icon" :icon="['fab', 'facebook']"/>
+                <font-awesome-icon class="icon" :icon="['fab', 'instagram']"/>
+                <font-awesome-icon class="icon" :icon="['fab', 'twitter']"/>
                 
             </div>
         </div>
@@ -26,7 +26,6 @@
     height: 30px;
     outline: none;
     text-indent: 10px;
-    margin-bottom: 5px;
     
 }
 
@@ -35,5 +34,9 @@
     flex-direction: row;
     justify-content: flex-end;
     gap: 5px
+}
+.icon{
+    color: var(--color-red);
+    padding: 10px 5px;
 }
 </style>
