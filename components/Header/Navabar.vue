@@ -19,7 +19,6 @@
 @media screen and (min-width: 600px) {
   .container-nav {
     flex-direction: row;
-    padding: 2rem  2rem;
   }
 }
 </style>
