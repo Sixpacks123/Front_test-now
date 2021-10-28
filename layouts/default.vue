@@ -2,9 +2,10 @@
     <div>
         <!--Composant de navigation Contient le menu et la barre de recherche-->
         <HeaderNavabar/>
+        <!--contenu de la page -->
         <Nuxt />
          <!--Pied de page -->
-        <!--<Footer/>-->
+        <FooterContent/>
     </div>
 </template>
 <style>
