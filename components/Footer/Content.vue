@@ -1,13 +1,17 @@
 <template>
     <footer class="page-container">
         <div class="content-navigation">
+            <div class="footer-link">
                 <!--Navigation--> 
                 <FooterNavigation/>
                 <!--About-->
                 <FooterAbout/>
-        </div>
-                <!--Newsletter-->
+            </div>
+                
         
+                <!--Newsletter-->
+                <FooterNewsletter/>
+        </div>
     </footer>
 </template>
 <style scoped>
@@ -19,8 +23,16 @@
     margin-bottom: 20px;
 }
 
+.footer-link{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+} 
 @media screen and (min-width: 600px) {
     .content-navigation{
+        flex-direction: row;
+    }
+    .footer-link{
         flex-direction: row;
     }
   }
