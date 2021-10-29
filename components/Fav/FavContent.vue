@@ -1,7 +1,7 @@
 <template>
     <section >
         <div class="page-container" >
-        <FavHeart/>
+            <FavHeart/>
         </div>            
     </section>    
 </template>
