@@ -1,17 +1,19 @@
 <template>
-    <footer class="page-container">
-        <div class="content-navigation">
-            <div class="footer-link">
-                <!--Navigation--> 
-                <FooterNavigation/>
-                <!--About-->
-                <FooterAbout/>
+    <footer>
+        <div class="page-container">
+            <div class="content-navigation">
+                <div class="footer-link">
+                    <!--Navigation--> 
+                    <FooterNavigation/>
+                    <!--About-->
+                    <FooterAbout/>
+                </div>
+                <!--Newsletter-->
+                <FooterNewsletter/>
             </div>
-            <!--Newsletter-->
-            <FooterNewsletter/>
-        </div>
-        <div class="footer-copyright">
-            <FooterCopyright/>
+            <div class="footer-copyright">
+                <FooterCopyright/>
+            </div>
         </div>
     </footer>
 </template>

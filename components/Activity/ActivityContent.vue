@@ -1,5 +1,5 @@
 <template>
-    <section class="">
+    <section class="section-color">
         <div class="page-container">
             <h2 class="font-police">Recherche par activité</h2>
             <div class="card-content">
@@ -48,16 +48,7 @@ export default {
 }
 </script>
 <style scoped>
-section{
-    width: 100vw;
-    height: auto;
-    max-width: 100vw;
-    position: relative;
-    background-color: var(--background);
-    display: flex;
-    flex-direction: column;
-    padding: 30px 0px 50px;
-}
+
 
 .card-content{
     display: flex;
@@ -66,5 +57,6 @@ section{
     justify-content: center;
     
 }
+
 
 </style>
