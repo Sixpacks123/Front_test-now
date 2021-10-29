@@ -1,7 +1,7 @@
 <template>
-    <section >
-        <div class="page-container" >
-            <FavHeart/>
+    <section class="section-colors">
+        <div class="page-container">
+        
         </div>            
     </section>    
 </template>

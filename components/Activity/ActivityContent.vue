@@ -17,7 +17,7 @@
 
 import Card from './Card.vue'
 export default {
-    name: 'content',
+    name: 'ActivityContent',
     components: { Card },
     data: function() {
         return {
