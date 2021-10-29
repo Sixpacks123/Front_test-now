@@ -10,11 +10,13 @@
             <!--Newsletter-->
             <FooterNewsletter/>
         </div>
+        <div class="footer-copyright">
+            <FooterCopyright/>
+        </div>
     </footer>
 </template>
 <script>
 </script>
-
 <style scoped>
 .content-navigation{
     display: flex;
@@ -29,6 +31,11 @@
     flex-direction: column;
     margin-bottom: 25px;
 } 
+
+.footer-copyright{
+    display: flex;
+    justify-content: center;
+}
 @media screen and (min-width: 600px) {
     .content-navigation{
         flex-direction: row;

@@ -92,3 +92,10 @@ h3{
     color: var(--color-dark-red);
 }
 
+
+copyright{
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    margin: auto auto 20px;
+    color: var(--color-gray);
+}
