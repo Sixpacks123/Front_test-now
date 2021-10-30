@@ -9,6 +9,7 @@
                 :image="item.img"
                 :name="item.name"
                 :reviews="item.reviews"
+                :rating="item.rating"
                 >
                 </ReviewsCard>
             </div>
@@ -34,22 +35,26 @@ export default {
                 {
                     img: image1,
                     name:'Fatima Mafoula',
-                    reviews:'Grâce à Loisirama, j’ai pu participer à une superbe balade en montagne avec toute la famille pour un prix imbattable, merci !'
+                    reviews:'Grâce à Loisirama, j’ai pu participer à une superbe balade en montagne avec toute la famille pour un prix imbattable, merci !',
+                    rating:3
                 },
                 {
                     img: image2,
                     name:'Philippe_castellier',
-                    reviews:'Alors que j’étais en vacances aux Caraïbes avec un ami, nous avions voulu faire de l’hélicoptère, grâce à Loisirama, il nous a fallu moins de 5 minutes pour trouver notre bonheur !'
+                    reviews:'Alors que j’étais en vacances aux Caraïbes avec un ami, nous avions voulu faire de l’hélicoptère, grâce à Loisirama, il nous a fallu moins de 5 minutes pour trouver notre bonheur !',
+                    rating:4
                 },
                 {
                     img: image3,
                     name:'Jean-jacques Leroy',
-                    reviews:'Je rêvais de faire une balade sur des chameaux. En seulement trois cliques, j’ai pu réaliser ce rêve ! C’était un moment génial de partage et de beauté, merci Loisirama !'
+                    reviews:'Je rêvais de faire une balade sur des chameaux. En seulement trois cliques, j’ai pu réaliser ce rêve ! C’était un moment génial de partage et de beauté, merci Loisirama !',
+                    rating:5
                 },
                 {
                     img:image4,
                     name:'Pénélope Du Flantier',
-                    reviews:'Nous avons trouvé tout ce que nous recherchions sur ce site avec mon mari pour notre nuit de noce : de la plongée sous-marine, du ski nautique et j’en passe.. Je conseille fortement Loisirama !'
+                    reviews:'Nous avons trouvé tout ce que nous recherchions sur ce site avec mon mari pour notre nuit de noce : de la plongée sous-marine, du ski nautique et j’en passe.. Je conseille fortement Loisirama !',
+                    rating:4
                 }
             ]
         }

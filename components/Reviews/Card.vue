@@ -11,15 +11,20 @@
               <p class="reviews font-police">"{{reviews}}"</p>
             </div>
             <div>
-                notation
+                <ReviewsRatingStar
+                :rating=5
+                :ratingValue="rating"
+                ></ReviewsRatingStar>
             </div>
         </div>
     </article>
 </template>
 <script>
+
 export default {
     name: 'Card',
-    props: ['image','name','reviews']
+    props: ['image','name','reviews','rating'],
+
 }
 </script>
 <style scoped>
