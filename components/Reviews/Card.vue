@@ -11,10 +11,10 @@
               <p class="reviews font-police">"{{reviews}}"</p>
             </div>
             <div>
-                <ReviewsRatingStar
+                <GlobalRatingStar
                 :rating=5
                 :ratingValue="rating"
-                ></ReviewsRatingStar>
+                ></GlobalRatingStar>
             </div>
         </div>
     </article>

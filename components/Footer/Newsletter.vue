@@ -16,7 +16,7 @@
 <style scoped>
 .content-news{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     
 }
 .input-news{
@@ -39,4 +39,12 @@
     color: var(--color-red);
     padding: 10px 5px;
 }
+
+
+@media screen and (min-width: 600px) {
+    .content-news{
+        flex-direction: column;
+    }
+}
+
 </style>

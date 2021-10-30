@@ -40,7 +40,7 @@ export default {
                 },
                 {
                     img: image2,
-                    name:'Philippe_castellier',
+                    name:'Philippe castellier',
                     reviews:'Alors que j’étais en vacances aux Caraïbes avec un ami, nous avions voulu faire de l’hélicoptère, grâce à Loisirama, il nous a fallu moins de 5 minutes pour trouver notre bonheur !',
                     rating:4
                 },

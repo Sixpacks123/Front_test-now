@@ -1,6 +1,6 @@
 
 <template lang="html">
-  <div class="svg-star">
+  <div class="svg">
       <svg
         v-for="num in (rating).times() /* <-- This is awesome! */"
         :key="num"
