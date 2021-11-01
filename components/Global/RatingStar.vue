@@ -1,4 +1,3 @@
-
 <template>
   <div class="svg">
       <svg
@@ -59,5 +58,5 @@ export default {
     fill: #9cacbd
   }
 
-  /** I leave to you to style your button **/
+
 </style>
