@@ -1,5 +1,5 @@
 
-<template lang="html">
+<template>
   <div class="svg">
       <svg
         v-for="num in (rating).times() /* <-- This is awesome! */"
@@ -20,6 +20,7 @@
 </template>
 <script>
 export default {
+  name: 'RatingStar',
   props: {
     // The number of stars you want to appear/display
     rating: { type: Number, default: 5 },

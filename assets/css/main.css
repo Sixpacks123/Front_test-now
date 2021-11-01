@@ -38,6 +38,7 @@
     padding: 0 10px;
 }
 
+/*liens global*/
 .nuxt-link-active{
     color: var(--color-salmon);
     text-decoration: none;
@@ -46,6 +47,7 @@
     letter-spacing: 1px;
     font-size: 0.9em;
 }
+
 
 
 h2{

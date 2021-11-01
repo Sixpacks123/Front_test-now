@@ -23,12 +23,9 @@ import image2 from '~/assets/img/philippe_castellier.jpg'
 import image3 from '~/assets/img/jean_jacques_leroy.jpg'
 import image4 from '~/assets/img/fatima_mafoula.jpg'
 
-import Card from './Card.vue'
+
 export default {
     name:'ReviewsContent',
-    components:{
-        Card
-    },
     data () {
         return {
             items: [

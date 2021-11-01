@@ -20,9 +20,12 @@
     </article>
 </template>
 <script>
-
+import GlobalRatingStar from '../Global/RatingStar.vue'
 export default {
     name: 'Card',
+    components: {
+        GlobalRatingStar
+    },
     props: ['image','name','reviews','rating'],
 
 }
