@@ -35,7 +35,7 @@
     justify-content: flex-end;
     gap: 5px
 }
-.icon{
+.icon-red{
     color: var(--color-red);
     padding: 10px 5px;
 }

@@ -1,5 +1,5 @@
 <template>
-    <section>
+    
         <div class="nav-right">
             <div>
                 <img  class="logo" src="~/assets/img/logo.png" alt="" />
@@ -16,7 +16,7 @@
             </nav> 
             
         </div>
-    </section>
+
 
 </template>
 <script>
