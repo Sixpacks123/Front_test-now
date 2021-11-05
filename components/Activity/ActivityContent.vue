@@ -3,71 +3,46 @@
         <div class="page-container">
             <h2 class="font-police">Recherche par activité</h2>
             <div class="card-content">
-                <ActivityCard 
+                <!--<ActivityCard 
                 v-for="item in items" :key="item.id"
                 :name='item.name'
                 :icon='item.icon'
                 :class="{ active: item.id === activeItem}"
                 @click.native="selectItem(item.id,item.category)"
                 >
+                </ActivityCard>-->
+                <ActivityCard 
+                v-for="c in ListCategory" :key="c.id"
+                :name='c.name'
+                :icon='c.icon'
+                :class="{ active: c.id === activeItem}"
+                @click.native="selectItem(c.id)"
+                >
                 </ActivityCard>
             </div>
         </div>  
-        <li v-for="item in test" :key="item.name">{{item.name}}</li>
-    </section>
+</section>
 </template>
 <script>
-import Card from './Card.vue'
+import { mapMutations } from 'vuex'
 export default {
     name: 'ActivityContent',
-    components: { Card },
     data: function() {
         return {
-            currentFilter: '',
-            items: [
-                {
-                    id: 1,
-                    name: 'Montagne',
-                    icon: ['fas', 'hiking'],
-                    category:"Montage",
-                },
-                {
-                    id: 2,
-                    name : 'Sport d\'hiver',
-                    icon : ['fas','skiing'],
-                    category : 'Hiver',  
-                },
-                {
-                    id: 3,
-                    name : 'Sport aquatique',
-                    icon : ['fas','swimmer'],
-                    category : 'aquatique'
-                },
-                {
-                    id: 4,
-                    name : 'Sport d\'équipe',
-                    icon: ['fas','volleyball-ball'],
-                    category:'equipe'
-                },
-                {
-                    id: 5,
-                    name : 'Aérien',
-                    icon : ['fas','helicopter'],
-                    category:'aerien'
-                }
-            ],
             activeItem : null
         }
     },
     methods: {
        selectItem(i,filter) {
             this.activeItem = i;
-            this.currentFilter = filter;
-        }
+        },
+         ...mapMutations({
+            toggle: 'ListCategory/toggle'
+    })
     },
     computed: {
-        test () {
-            return this.items ? this.items.category === this.currentFilter : console.log("tg")
+        ListCategory() {
+            return this.$store.state.ListCategory.ListCategory
         }
     } 
 }
@@ -83,5 +58,10 @@ export default {
 }
 .highlight {
   background: yellow;
+}
+
+.done {
+  text-decoration: line-through;
+  background: red;
 }
 </style>

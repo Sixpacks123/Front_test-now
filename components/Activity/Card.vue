@@ -8,18 +8,9 @@
 </template>
 <script>
 export default {
-    name: 'Card',
-    props: ['name', 'icon' ],
-    data () {
-        return {
-            isActive: false
-        }
-    },
-    methods: {
-        addClass(){
-            this.isActive = true
-        }
-    }
+
+    props: ['name', 'icon' ]
+
 }
 </script>
 
