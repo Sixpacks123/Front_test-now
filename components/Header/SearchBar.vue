@@ -7,31 +7,27 @@
                 <input 
                 class="bar"
                 type="text"
-                placeholder="Ville, Pays">
+                placeholder="Ville, Pays"
+                v-model="search"/>
             </div>
             <div class="btn">
                 <button class="btn">Rechercher</button>
-            </div>
+            </div> 
         </form>    
 </template>
-<script >
-/*
+<script>
 export default {
-    computed: {
-
-    }, @change="hanfleChange"
-                v-model="searchText"
-    data() {
-        return {
-            searchText: ''
-        }
-    },
-    methods: {
-        handleChange(){
-            this.$emit("search", this.searchText)
+    props: ['value'],
+    computed:{
+        search : {
+            get() {
+                return this.value
+            },set(updated) {
+                this.$emit("input",updated)
+            }
         }
     }
-}*/
+}; 
 </script>
 <style scoped>
 .search_bar{
@@ -43,7 +39,6 @@ export default {
    height: 40px;
    width: 100%
 }
-
 .btn{
    visibility: hidden;
 }
@@ -64,8 +59,6 @@ export default {
     width: 1em;
     height: 40px;
 }
- 
-
  @media screen and (min-width: 800px) {
    .btn{
     visibility:visible;
@@ -77,9 +70,9 @@ export default {
     border: none;
     transition: .2s linear;
     height: 40px;
-}
-.search_bar{
+    }
+    .search_bar{
     width: 400px;
+    }
 }
-  }
 </style>

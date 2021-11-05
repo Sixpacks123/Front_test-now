@@ -2,8 +2,7 @@
     <section class="section-color">
         <div class="page-container">
             <h2 class="font-police">Retours de nos clients</h2>
-            <div class="content-reviews inline-flex"> <!-- bloc flex-box pour les commentaire -->
-
+            <div class="content-reviews inline-flex">
                 <ReviewsCard
                 v-for="item in items" :key="item.name"
                 :image="item.img"
@@ -14,7 +13,6 @@
                 </ReviewsCard>
             </div>
         </div>
-        
     </section>
 </template>
 <script>
@@ -22,7 +20,6 @@ import image1 from '~/assets/img/fatima_mafoula.jpg'
 import image2 from '~/assets/img/philippe_castellier.jpg'
 import image3 from '~/assets/img/jean_jacques_leroy.jpg'
 import image4 from '~/assets/img/fatima_mafoula.jpg'
-
 
 export default {
     name:'ReviewsContent',

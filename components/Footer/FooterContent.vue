@@ -27,13 +27,11 @@
     justify-content: space-between;
     margin-bottom: 20px;
 }
-
 .footer-link{
     display: flex;
     flex-direction: column;
     margin-bottom: 25px;
 } 
-
 .footer-copyright{
     display: flex;
     justify-content: center;
@@ -46,5 +44,4 @@
         flex-direction: row;
     }
   }
-
 </style>

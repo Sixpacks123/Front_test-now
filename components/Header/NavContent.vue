@@ -1,5 +1,4 @@
 <template>
-    
         <div class="nav-right">
             <div>
                 <img  class="logo" src="~/assets/img/logo.png" alt="" />
@@ -14,21 +13,13 @@
                     Contact
                 </nuxt-link>
             </nav> 
-            
         </div>
-
-
 </template>
-<script>
-
-</script>
-
 <style scoped>
 .nav-right{
     display: flex;
     flex-direction: column;
 }
-
 .nav-link{
     display: flex;
     flex-direction: row;
@@ -37,10 +28,7 @@
     padding: 20px 0;
     font-size: 1em;
 }
-
-
 .logo{
     width: 250px;
 }
-
 </style>

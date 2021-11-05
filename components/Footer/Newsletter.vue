@@ -17,7 +17,6 @@
 .content-news{
     display: flex;
     flex-direction: row;
-    
 }
 .input-news{
     background-color: var(--color-light-gray);
@@ -26,9 +25,7 @@
     height: 30px;
     outline: none;
     text-indent: 10px;
-    
 }
-
 .icon-news{
     display: flex;
     flex-direction: row;
@@ -39,12 +36,9 @@
     color: var(--color-red);
     padding: 10px 5px;
 }
-
-
 @media screen and (min-width: 600px) {
     .content-news{
         flex-direction: column;
     }
 }
-
 </style>

@@ -26,8 +26,7 @@ export default {
     components: {
         GlobalRatingStar
     },
-    props: ['image','name','reviews','rating'],
-
+    props: ['image','name','reviews','rating']
 }
 </script>
 <style scoped>

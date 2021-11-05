@@ -7,7 +7,6 @@
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 19.481 19.481"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
         enable-background="new 0 0 19.481 19.481"
         width="15px"
       >
@@ -21,9 +20,7 @@
 export default {
   name: 'RatingStar',
   props: {
-    // The number of stars you want to appear/display
     rating: { type: Number, default: 5 },
-    // The number of stars to be active (filled)
     ratingValue: { type: Number, default: 0 }
   },
   data() {
@@ -32,10 +29,8 @@ export default {
     }
   },
   created() {
-    // Sets an initial value, if any
     this.ratingSetValue = this.ratingValue
-
-    // ESlint will not be happy with this 🤷🏽‍♂️
+    // ca ne marcherais pas avec eslint je pense 
     Number.prototype.times = function() {
       let i = -1
       const arr = []
@@ -53,10 +48,7 @@ export default {
   svg.active {
     fill: var( --color-green);
   }
-
   svg {
     fill: #9cacbd
   }
-
-
 </style>
