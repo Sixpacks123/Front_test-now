@@ -1,4 +1,4 @@
-<template>
+<template><div>
         <form class="search_bar">
             <div>
                 <font-awesome-icon class="search-icon" :icon="['fas', 'search']"/>
@@ -6,46 +6,48 @@
             <div>
                 <input 
                 class="bar"
-                type="text"
+                type="search"
                 placeholder="Ville, Pays"
-                v-model="searchQuery"/>
+                v-model="searchWord"/>
             </div>
+
+           
             <div class="btn">
                 <button class="btn">Rechercher</button>
-            </div> 
-            <div v-for="r of resultQuery" :key="r.id">{{r.title}}</div>
-        </form>    
+            </div>  
+             <li v-for="a in filteredActivity" :key="a.name"> {{ a.name }}</li>
+        </form>    <p>getSearchWord: {{ searchWord }} </p> </div>
 </template>
 <script>
-
+import { mapActions } from 'vuex'
+//code non définitif
 export default {
-     data() {
-        return {
-            searchQuery: null,
-            resources: [
-        { id: 1, title: "javascript for dummies" },
-        { id: 2, title: "vue for dummies" },
-        { id: 3, title: "dos for dummies" },
-        { id: 4, title: "windows for dummies" },
-        { id: 5, title: "html for dummies" }
-    ]
-            };
+  data () {
+    return {
+     
+    }
   },
-    computed:{
-       resultQuery() {
-        if (this.searchQuery) {
-            return this.resources.filter(item => {
-            return this.searchQuery
-                .toLowerCase()
-                .split(" ")
-                .every(v => item.title.toLowerCase().includes(v));
-            });
-        } else {
-            return this.resources;
+    computed: {
+        filteredActivity () {
+            try {
+                let a = (this.$store.getters.getFilteredActivity || this.$store.state.ListActivity.allActivity)
+                console.log(a)
+                return (a)
+            } catch (error) {
+                console.log(error)
+            }
+        },
+     searchWord: {
+        get () {
+            return this.$store.state.searchWord
+        },
+        set (value) {
+            this.$store.dispatch('FILTERED_ACTIVITY', value)
         }
     }
-}
-}
+  }
+  }
+
 </script>
 <style scoped>
 .search_bar{

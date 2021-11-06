@@ -25,6 +25,7 @@ export default {
     name:'ReviewsContent',
     data () {
         return {
+            //je met les données en static et non dans un store car on a aucune interaction avec elle
             items: [
                 {
                     img: image1,
