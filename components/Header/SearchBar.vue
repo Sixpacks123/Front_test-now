@@ -14,8 +14,7 @@
             <div class="btn">
                 <button class="btn">Rechercher</button>
             </div>  
-             
-        </div>    <p>getSearchWord: {{ searchWord }} </p> 
+        </div>   
     </div>
 </template>
 <script>

@@ -1,15 +1,15 @@
 export const state = () => ({
     allActivity: [
         {
-            name:'Paris',
+            name:'Piscine',
             ville: 'Paris'
         },
         {
-            name:'Rennes',
+            name:'surf',
             ville: 'Rennes'
         },
         {
-            name:'Marseille',
+            name:'parapente',
             ville: 'Marseille'
         }
     ],
@@ -27,17 +27,19 @@ export const getters = {
 
 export const mutations = {
     filtered_Activity (state, word) {
+        word= word.trim().toLowerCase()
         if (!(word) || word === '{}') {
             state.searchWord = null
             state.filteredActivity = null
         } else {
           state.searchWord = word
-          //word = word.trim().toLowerCase()
+          word = word.trim().toLowerCase()
           state.filteredActivity = state.allActivity.filter((activity) => {
-            return activity.ville.toLowerCase().includes(word)  
+            return activity.ville.toLowerCase().includes(word) || activity.name.toLowerCase().includes(word)  
           })
         }
       }
+
     }
 
 export const actions = {

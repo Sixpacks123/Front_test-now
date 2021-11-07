@@ -7,7 +7,7 @@
             </div>-->
             {{searchWord}}
 
-            <li v-for="(a,i) in filteredActivity" :key="i"> {{ a.name }}</li>
+            <li v-for="(a,i) in filteredActivity" :key="i"> {{ a.name }} || {{a.ville}}</li>
         </div>            
     </section>    
 </template>
@@ -21,7 +21,7 @@ export default {
     computed: {
         filteredActivity () {
             try {
-                let a = (this.$store.getters.getFilteredActivity || this.$store.state.ListActivity.allActivity)
+                let a = (this.$store.getters.getFilteredActivity || this.$store.state.allActivity)
                 console.log(a)
                 return (a)
             } catch (error) {
