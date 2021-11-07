@@ -9,8 +9,8 @@ export const state = () => ({
             ville: 'Rennes'
         },
         {
-            name:'Marseille',
-            ville: 'Marseille'
+            name:'Brest',
+            ville:'Brest'
         }
     ],
     activity:{},
@@ -32,9 +32,9 @@ export const mutations = {
             state.filteredActivity = null
         } else {
           state.searchWord = word
-          //word = word.trim().toLowerCase()
+          word = word.trim().toLowerCase()
           state.filteredActivity = state.allActivity.filter((activity) => {
-            return activity.ville.toLowerCase().includes(word)  
+            return activity.ville.toLowerCase().includes(word) 
           })
         }
       }

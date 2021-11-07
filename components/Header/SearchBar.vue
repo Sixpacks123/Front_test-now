@@ -1,5 +1,6 @@
-<template><div>
-        <form class="search_bar">
+<template>
+    <div>
+        <div class="search_bar">
             <div>
                 <font-awesome-icon class="search-icon" :icon="['fas', 'search']"/>
             </div>
@@ -10,44 +11,34 @@
                 placeholder="Ville, Pays"
                 v-model="searchWord"/>
             </div>
-
-           
             <div class="btn">
                 <button class="btn">Rechercher</button>
             </div>  
-             <li v-for="a in filteredActivity" :key="a.name"> {{ a.name }}</li>
-        </form>    <p>getSearchWord: {{ searchWord }} </p> </div>
+             
+        </div>    <p>getSearchWord: {{ searchWord }} </p> 
+    </div>
 </template>
 <script>
-import { mapActions } from 'vuex'
-//code non définitif
 export default {
-  data () {
-    return {
-     
-    }
-  },
     computed: {
         filteredActivity () {
             try {
-                let a = (this.$store.getters.getFilteredActivity || this.$store.state.ListActivity.allActivity)
-                console.log(a)
+                let a = (this.$store.getters.filteredActivity || this.$store.state.allActivity)
                 return (a)
             } catch (error) {
                 console.log(error)
             }
         },
      searchWord: {
-        get () {
-            return this.$store.state.searchWord
-        },
-        set (value) {
-            this.$store.dispatch('FILTERED_ACTIVITY', value)
-        }
+      get () {
+        return this.$store.getters.searchWord
+      },
+      set (value) {
+        this.$store.dispatch('filtered_Activity', value)
+      }
     }
   }
-  }
-
+}
 </script>
 <style scoped>
 .search_bar{
