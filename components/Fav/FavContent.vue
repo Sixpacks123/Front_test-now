@@ -1,7 +1,7 @@
 <template>
     <section class="section-colors">
         <div class="page-container">
-        <h2 class="font-police">Nos coups de coeur </h2>
+        <h2 class="font-police">{{title}}</h2>
             <!--<div v-for="activities in filteredData" :key="activities.id">
                 <FavHeartCard :activities="activities"/>
             </div>-->
@@ -15,15 +15,16 @@
 export default {
  data () {
     return {
-      searchWord: this.$store.getters.getSearchWord
+      searchWord: this.$store.getters.getSearchWord,
+      
     }
   },
     computed: {
         filteredActivity () {
             try {
-                let a = (this.$store.getters.getFilteredActivity || this.$store.state.allActivity)
-                console.log(a)
-                return (a)
+                
+                return (this.$store.getters.getFilteredActivity || this.$store.state.allActivity || this.$store.getters.getFilteredCategory)
+
             } catch (error) {
                 console.log(error)
             }

@@ -8,7 +8,8 @@
                 :name='c.name'
                 :icon='c.icon'
                 :class="{ active: c.id === activeItem}"
-                @click.native="selectItem(c.id)"
+                @click.native="selectItem(c.id),SetCategorie(c.category)"
+                
                 >
                 </ActivityCard>
             </div>
@@ -30,13 +31,16 @@ export default {
         },
          ...mapMutations({
             toggle: 'ListCategory/toggle'
-    })
+    }),SetCategorie(item){
+        this.$store.dispatch('filteredBycategory',item)
+    } 
     },
     computed: {
         ListCategory() {
             return this.$store.state.ListCategory.ListCategory
         }
-    } 
+    },
+    
 }
 
 //reste a dev la partie recherche d'activité

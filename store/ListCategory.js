@@ -6,7 +6,7 @@ export const state = () => ({
             id: 1,
             name: 'Montagne',
             icon: ['fas', 'hiking'],
-            category:"Montage",
+            category:"Montagne",
         },
         {
             id: 2,
@@ -18,19 +18,19 @@ export const state = () => ({
             id: 3,
             name : 'Sport aquatique',
             icon : ['fas','swimmer'],
-            category : 'aquatique'
+            category : 'Aquatique'
         },
         {
             id: 4,
             name : 'Sport d\'équipe',
             icon: ['fas','volleyball-ball'],
-            category:'equipe'
+            category:'Equipe'
         },
         {
             id: 5,
             name : 'Aérien',
             icon : ['fas','helicopter'],
-            category:'aerien'
+            category:'Aerien'
         }
     ]
 })
