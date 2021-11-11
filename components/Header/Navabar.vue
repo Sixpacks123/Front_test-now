@@ -16,12 +16,13 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
-  padding:10px;
+  align-items:center;
+  padding:10px 0px;
 }
 @media screen and (min-width: 600px) {
   .container-nav {
     flex-direction: row;
+    align-items: flex-start;
   }
 }
 </style>

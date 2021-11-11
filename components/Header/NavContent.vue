@@ -1,7 +1,7 @@
 <template>
         <div class="nav-right">
             <div>
-                <img  class="logo" src="~/assets/img/logo.png" alt="" />
+               <img  class="logo" src="~/assets/img/logo.png" alt="" />
             </div>
             <nav class="nav-link">
                 <nuxt-link class="header__link" to="/">
@@ -19,6 +19,7 @@
 .nav-right{
     display: flex;
     flex-direction: column;
+    
 }
 .nav-link{
     display: flex;

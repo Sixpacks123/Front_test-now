@@ -16,7 +16,7 @@
 <style scoped>
 .content-news{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .input-news{
     background-color: var(--color-light-gray);
@@ -32,7 +32,7 @@
     justify-content: flex-end;
     gap: 5px
 }
-.icon-red{
+.icon{
     color: var(--color-red);
     padding: 10px 5px;
 }

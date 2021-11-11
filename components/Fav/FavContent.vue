@@ -1,13 +1,12 @@
 <template>
     <section class="section-colors">
         <div class="page-container">
-        <h2 class="font-police">{{title}}</h2>
-            <!--<div v-for="activities in filteredData" :key="activities.id">
-                <FavHeartCard :activities="activities"/>
-            </div>-->
-            {{searchWord}}
-
-            <li v-for="(a,i) in filteredActivity" :key="i"> {{ a.name }} || {{a.ville}}</li>
+        <h2 class="font-police">Nos Coups de coeur</h2>
+        <div class="content">
+            <article v-for="(a,i) in filteredActivity" :key="i">
+                <FavHeartCard :activities="a"/>
+            </article>
+        </div>
         </div>            
     </section>    
 </template>
@@ -22,9 +21,8 @@ export default {
     computed: {
         filteredActivity () {
             try {
-                
+                console
                 return (this.$store.getters.getFilteredActivity || this.$store.state.allActivity || this.$store.getters.getFilteredCategory)
-
             } catch (error) {
                 console.log(error)
             }
@@ -33,5 +31,13 @@ export default {
 }
 </script>
 <style scoped>
+.content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 </style>

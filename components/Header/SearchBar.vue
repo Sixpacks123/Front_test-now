@@ -1,5 +1,4 @@
 <template>
-    <div>
         <div class="search_bar">
             <div>
                 <font-awesome-icon class="search-icon" :icon="['fas', 'search']"/>
@@ -15,19 +14,10 @@
                 <button class="btn">Rechercher</button>
             </div>  
         </div>   
-    </div>
 </template>
 <script>
 export default {
     computed: {
-        filteredActivity () {
-            try {
-                let a = (this.$store.getters.filteredActivity || this.$store.state.allActivity)
-                return (a)
-            } catch (error) {
-                console.log(error)
-            }
-        },
      searchWord: {
       get () {
         return this.$store.getters.searchWord

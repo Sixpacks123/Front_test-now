@@ -39,7 +39,7 @@ export const getters = {
     getCategory: (state) => state.category,
     getSearchWord: (state) => state.searchWord,
     getFilteredActivity: (state) =>state.filteredActivity,
-    getFilteredActivity: (state) =>state.filteredCategory,
+    getFilteredCategory: (state) =>state.filteredCategory,
 
 }
 
@@ -51,17 +51,17 @@ export const mutations = {
             state.filteredActivity = null
         } else {
           state.searchWord = word
+          console.log(word)
           word = word.trim().toLowerCase()
           state.filteredActivity = state.allActivity.filter((activity ) => {
-            return activity.ville.toLowerCase().includes(word) || activity.name.toLowerCase().includes(word) 
+           return activity.ville.toLowerCase().includes(word) || activity.name.toLowerCase().includes(word) 
           })
         }
       },
       filteredBycategory (state,category) {
-          console.log(category)
         state.filteredCategory = category
         category = category.toLowerCase()
-        state.filteredCategory = state.allActivity.filter((activity) =>{ return activity.category.toLowerCase().includes(category) })
+        state.filteredActivity = state.allActivity.filter((activity) =>{ return activity.category.toLowerCase().includes(category) })
         
     }
 }
@@ -70,8 +70,8 @@ export const actions = {
     filtered_Activity ({ commit }, word) {
         commit('filtered_Activity', word)
       },
-      filteredBycategory ({ commit}, Ncategory){
-          commit('filteredBycategory', Ncategory)
+      filteredBycategory ({ commit}, category){
+          commit('filteredBycategory', category)
       }
 
     }

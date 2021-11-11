@@ -1,8 +1,6 @@
 <template>
     <article class="card-reviews">
-        <div>
            <img class="customer-img" :src="image" alt="">
-        </div>
         <div>
             <div>
                 <p class="name font-police">{{name}}</p>
@@ -34,17 +32,18 @@ export default {
         display: flex;
         justify-content: center;
         align-content: center;
+        margin: 5px;
         padding: 10px;
-        margin: 30px;
     }
    .customer-img{
-       width: 110px;
-       height: 110px;
+       
+       width: 80px;
+       height: 80px;
        border-radius: 50%;
        margin-right: 15px;
    }
    .name{
-       font-size: 1.5em;
+       font-size: 1.2em;
        font-weight: 500;
        color: var(--color-dark);
        
@@ -63,6 +62,13 @@ export default {
        .reviews{
         font-size: 1em;
        }
+       .name{
+           font-size: 1.5em;
+       }
+       .customer-img{
+           width: 110px;
+           height: 110px;
+       }
    }
       @media screen and (min-width: 600px) {
        .card-reviews{
@@ -70,6 +76,9 @@ export default {
        }
        .reviews{
         font-size: 1em;
+       }
+       .name{
+           font-size: 1.3;
        }
    }
 </style>

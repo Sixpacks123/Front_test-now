@@ -7,7 +7,7 @@
                 v-for="c in ListCategory" :key="c.id"
                 :name='c.name'
                 :icon='c.icon'
-                :class="{ active: c.id === activeItem}"
+                :class="{ activeicon: c.id=== activeItem, active: c.id === activeItem}"
                 @click.native="selectItem(c.id),SetCategorie(c.category)"
                 
                 >
@@ -51,13 +51,5 @@ export default {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}
-.highlight {
-  background: yellow;
-}
-
-.done {
-  text-decoration: line-through;
-  background: red;
 }
 </style>

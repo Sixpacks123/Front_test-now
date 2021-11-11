@@ -38,6 +38,9 @@ export default {
     box-shadow: 0 1px 5px var(--color-green);
 }
 
+.activeicon{
+    color: var(--color-green);
+}
 
 
 </style>
