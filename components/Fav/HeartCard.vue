@@ -2,16 +2,17 @@
     <div>
         <div class="card">
             <img class="img" src="~/assets/img/parapente.jpg" alt="">
-            <div class="card-content">
+            <div class="card-content" :class="{  contentUp: show === true }">
                 <div class="btn">
                     <!--icone flèche-->
+                    <button @click="show = !show">sdfsdf</button>
                 </div>
                 <div class="card-header">
                     <div class="card-header">
                         <h4>{{ activities.name }}</h4>
                         <p>{{ activities.ville }}</p>
                     </div>
-                    <div class="card-header">
+                    <div class="card-header"> 
                         <p></p>
                     </div>
                 </div>
@@ -27,13 +28,16 @@
                 </div>
             </div>
         </div>
-        <p>{{ activities.name }}</p>
-        <p>{{ activities.category }}</p>
         </div>
 </template>
 <script>
 export default {
-    props: ["activities"]
+    props: ["activities"],
+    data () {
+        return {
+            show: false
+        }
+    }
 }
 // en attente du back pour dev cete page
 </script>
@@ -59,11 +63,21 @@ export default {
     transition: all .2s linear;
 }
 
+.contentUp{
+    height: 80px;
+}
+
 .img{
     width: 100%;
     height: 140px;
     object-position: center;
     object-fit: cover;
+}
+
+.card-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 </style>
