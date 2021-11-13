@@ -73,6 +73,12 @@ h3{
     padding: 20px 0px;
 }
 
+h4{
+    color: var(--color-gray);
+    letter-spacing: .7px;
+    font-size: 1em;
+}
+
 @media screen and (min-width: 600px) {
    h2{
        font-size: 1.6em;

@@ -1,29 +1,48 @@
 export const state = () => ({
     allActivity: [
         {
-            name:'Rando',
-            ville: 'Tigne',
+            TitleActivity:'Parapente',
+            city: 'Annecy',
+            country: 'France',
+            price:'80',
+            rating:3,
+            time: '1h30',
+            img:require('~/assets/img/parapente.jpg'),
+            popular: false,
             category:'Montagne'
         },
         {
-            name:'ski',
-            ville: 'Brest',
-            category:'Hiver'
+            TitleActivity:'Blausee',
+            city: 'Bern',
+            country: 'Suisse',
+            price:'Gratuit',
+            rating:2,
+            time: '3h',
+            img:require('~/assets/img/blausee.jpg'),
+            popular: false,
+            category:''
         },
         {
-            name:'nantation',
-            ville: 'Marseille',
-            category: 'Aquatique'
+            TitleActivity:'Ski alpin',
+            city: 'Mont-Tremblant',
+            country: 'Canada',
+            price:'24',
+            rating:4,
+            time: 'Illimité',
+            img:require('~/assets/img/ski.jpg'),
+            popular: true,
+            category:'Ski'
         },
         {
-            name:'foot',
-            ville: 'Marseille',
-            category: 'Equipe'
-        },
-        {
-            name:'parapente',
-            ville: 'Marseille',
-            category: 'Aerien'
+            TitleActivity:'Balade à dos de chameau',
+            city: 'Dubaï',
+            country: ' Emirats arabes unis',
+            price:'41',
+            rating:4,
+            time: 'Illimité',
+            img:require('~/assets/img/dubai.jpg'),
+            popular: true,
+            category:'Montagne'
         }
     ],
     activity:{},
@@ -54,7 +73,7 @@ export const mutations = {
           console.log(word)
           word = word.trim().toLowerCase()
           state.filteredActivity = state.allActivity.filter((activity ) => {
-           return activity.ville.toLowerCase().includes(word) || activity.name.toLowerCase().includes(word) 
+           return activity.city.toLowerCase().includes(word) || activity.TitleActivity.toLowerCase().includes(word) || activity.country.toLowerCase().includes(word) 
           })
         }
       },

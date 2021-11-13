@@ -1,30 +1,35 @@
 <template>
     <div>
         <div class="card">
-            <img class="img" src="~/assets/img/parapente.jpg" alt="">
+            <span  class="popular font-police" v-if='activities.popular === true'>POPULAIRE</span>
+            <img class="img" :src='activities.img' alt="">
             <div class="card-content" :class="{  contentUp: show === true }">
-                <div class="btn">
+                <div class="btn" @click="show = !show">
                     <!--icone flèche-->
-                    <button @click="show = !show">sdfsdf</button>
+                    <font-awesome-icon class='icon' :class="{ iconUp: show === true }" :icon="['fas', 'chevron-up']"/>
                 </div>
                 <div class="card-header">
-                    <div class="card-header">
-                        <h4>{{ activities.name }}</h4>
-                        <p>{{ activities.ville }}</p>
+                    <div class="card-description">
+                        <h4 class="font-police">{{ activities.TitleActivity }}</h4>
+                        <span class="location font-police">{{ activities.city }}, {{ activities.country}}</span>
                     </div>
-                    <div class="card-header"> 
-                        <p></p>
+                    <div class="card-description"> 
+                        <p>{{activities.price}}€ </p>
                     </div>
                 </div>
-                <div class="card-description">
-                    <GlobalRatingStar
+                <div class="card-header">
+                    <div>
+                        <GlobalRatingStar
                     :rating=5
-                    :ratingValue="5"
+                    :ratingValue='activities.rating'
                     ></GlobalRatingStar>
-                    <p>
-                        <span></span>
-                        <span></span>
-                    </p>
+                    </div>
+                    <div>
+                        <span class="font-police">Durée</span>
+                        <span class="font-police">{{  activities.time}}</span>
+                    </div>
+                        
+                     
                 </div>
             </div>
         </div>
@@ -66,6 +71,21 @@ export default {
 .contentUp{
     height: 80px;
 }
+.btn{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:var(--color-white);
+    border: .5px solid #ccc;
+    left: 50%;
+    transform: translate(-50%,-20px);
+    transition: all .2s linear;
+    cursor: pointer;
+}
 
 .img{
     width: 100%;
@@ -74,10 +94,43 @@ export default {
     object-fit: cover;
 }
 
-.card-description{
+.card-header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
+}
+.card-description{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.icon{
+    color: var(--color-gray);
+    width: .7em;
+}
+
+.iconUp{
+    transform: rotate(180deg);
+}
+
+.popular{
+    background-color: var(--color-dark-cyan);
+color: #fff;
+font-size: .8em;
+padding: 3px 7px;
+position: absolute;
+top: 10px;
+right: 10px;
+border-radius: 5px;
+}
+.location{
+    font-size: .7em;
+font-weight: 100;
+letter-spacing: 1px;
+color: #999;
+margin-top: 5px;
 }
 
 </style>
