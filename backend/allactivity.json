@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "TitleActivity": "Parapente",
+        "city": "Annecy",
+        "country": "France",
+        "price":"80",
+        "rating":3,
+        "time": "1h30",
+        "img":"~/assets/img/parapente.jpg'",
+        "popular": "false",
+        "category":"Montagne"
+    },
+    {
+        "id": 2,
+        "TitleActivity":"Blausee",
+        "city": "Bern",
+        "country": "Suisse",
+        "price":"Gratuit",
+        "rating":2,
+        "time": "3h",
+        "img":"~/assets/img/blausee.jpg",
+        "popular": false,
+        "category":""
+    },
+    {
+        "id": 3,
+        "TitleActivity":"Ski alpin",
+        "city": "Mont-Tremblant",
+        "country": "Canada",
+        "price":"24",
+        "rating":4,
+        "time": "Illimité",
+        "img":"~/assets/img/ski.jpg",
+        "popular": true,
+        "category":"Ski"
+    },
+    {
+        "id": 4,
+        "TitleActivity":"Balade à dos de chameau",
+        "city": "Dubaï",
+        "country": "Emirats arabes unis",
+        "price":"41",
+        "rating":4,
+        "time": "Illimité",
+        "img":"~/assets/img/dubai.jpg",
+        "popular": true,
+        "category":"Montagne"
+    }
+]
