@@ -1,5 +1,5 @@
 {
-  "name": "node-express-api-sample",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,12 +8,7 @@
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/RayedB/node-express-api/issues"
-  },
-  "homepage": "https://github.com/RayedB/node-express-api#readme",
   "dependencies": {
     "express": "^4.17.1"
   }
 }
-s
