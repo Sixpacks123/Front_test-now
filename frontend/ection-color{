@@ -1,0 +1,90 @@
+[33mcommit 9788c56351a3f62cc85597e68ad2420f74e5869d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Sixpacks123 <aub.heurtault@gmail.com>
+Date:   Fri Oct 29 14:14:16 2021 +0200
+
+    copyright
+
+[33mcommit ba9095f6270d745e617af840d4b4784c95fd7eec[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Sixpacks123 <aub.heurtault@gmail.com>
+Date:   Thu Oct 28 22:52:51 2021 +0200
+
+    Correction ereur content
+
+[33mcommit 4cb73b4efae88f87503e8abc7363df3820219a0d[m
+Author: Sixpacks123 <aub.heurtault@gmail.com>
+Date:   Thu Oct 28 21:36:28 2021 +0200
+
+    Footer dev newsletter
+
+[33mcommit 49cdf2f0c9119d28e6d4ede8f1c7493c91dcc025[m
+Author: Sixpacks123 <aub.heurtault@gmail.com>
+Date:   Thu Oct 28 21:05:28 2021 +0200
+
+    footer
+
+[33mcommit 57f7a6e3dd87c38de2894d843307ce6d464cd2ed[m
+Author: Sixpacks123 <aub.heurtault@gmail.com>
+Date:   Thu Oct 28 21:04:16 2021 +0200
+
+    ajustement des lien du footer
+
+[33mcommit ff0c1c7d0636e307441aa9ab63fc2a25f6ea451d[m
+Author: Sixpacks123 <aub.heurtault@gmail.com>
+Date:   Thu Oct 28 20:49:23 2021 +0200
+
+    Footer devloppement
+
+[33mcommit f493e76209951b54e988c2d4051f81c1c0e86d79[m
+Author: Sixpacks123 <aub.heurtault@gmail.com>
+Date:   Thu Oct 28 19:14:49 2021 +0200
+
+    ajout de la structure de nos coups de coeur
+
+[33mcommit 9ea07aef347f986b7939e1b4b0aa55b939ae8f17[m
+Author: Sixpacks123 <aub.heurtault@gmail.com>
+Date:   Thu Oct 28 19:04:21 2021 +0200
+
+    Ajustement du menu sur la maquette et ajustement du visuel du filtre d'activité(1h)
+
+[33mcommit 5bedeea01cbcc19a17c2ab8e73dd6ded0512c8e9[m
+Author: Sixpacks123 <aub.heurtault@gmail.com>
+Date:   Thu Oct 28 14:54:41 2021 +0200
+
+    division du composnat header et création de l'interface du  filtre de recherche d'activité (2h30)
+
+[33mcommit a698c39ec7192a9ba1b97c02bab2daf4800f6913[m
+Author: Sixpacks123 <aub.heurtault@gmail.com>
+Date:   Thu Oct 28 09:39:16 2021 +0200
+
+    Ajout PDF présentation exercice
+
+[33mcommit 23e5ee4e9f68a216600a9461016ca0f3a7b049dd[m
+Merge: b81a845 5be8501
+Author: Sixpacks123 <aub.heurtault@gmail.com>
+Date:   Wed Oct 27 22:53:15 2021 +0200
+
+    Merge branch 'master' of https://github.com/Sixpacks123/Front_test-now
+
+[33mcommit b81a845b9a72b6b587d776ced30cfe52f47b4368[m
+Author: Sixpacks123 <aub.heurtault@gmail.com>
+Date:   Wed Oct 27 22:44:34 2021 +0200
+
+    Commencment de l'integration du menu(environ 2H)
+
+[33mcommit 5be85011d632be81dd8b21b5e9c972fbcc5ac801[m
+Author: Heurtault Aubin <38321768+Sixpacks123@users.noreply.github.com>
+Date:   Wed Oct 27 19:48:31 2021 +0200
+
+    Update README.md
+
+[33mcommit 52107f1d085a26261e92c9adeda0b97fedd620c0[m
+Author: Heurtault Aubin <38321768+Sixpacks123@users.noreply.github.com>
+Date:   Wed Oct 27 19:48:20 2021 +0200
+
+    Update README.md
+
+[33mcommit a9a8938898eb3b406e54b3b3f07abb8c90af5978[m[33m ([m[1;32mmain[m[33m)[m
+Author: Sixpacks123 <aub.heurtault@gmail.com>
+Date:   Wed Oct 27 19:33:54 2021 +0200
+
+    initialisation
