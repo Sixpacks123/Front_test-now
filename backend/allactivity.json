@@ -7,7 +7,7 @@
         "price":"80",
         "rating":3,
         "time": "1h30",
-        "img":"~/assets/img/parapente.jpg'",
+        "img":"parapente",
         "popular": "false",
         "category":"Montagne"
     },
@@ -19,7 +19,7 @@
         "price":"Gratuit",
         "rating":2,
         "time": "3h",
-        "img":"~/assets/img/blausee.jpg",
+        "img":"blausee",
         "popular": false,
         "category":""
     },
@@ -31,7 +31,7 @@
         "price":"24",
         "rating":4,
         "time": "Illimité",
-        "img":"~/assets/img/ski.jpg",
+        "img":"ski",
         "popular": true,
         "category":"Ski"
     },
@@ -43,7 +43,7 @@
         "price":"41",
         "rating":4,
         "time": "Illimité",
-        "img":"~/assets/img/dubai.jpg",
+        "img":"dubai",
         "popular": true,
         "category":"Montagne"
     }

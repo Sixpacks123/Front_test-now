@@ -11,12 +11,20 @@
     </section>    
 </template>
 <script>
+import axios from 'axios'                                                                                                                                                
 export default {
+    
  data () {
     return {
       searchWord: this.$store.getters.getSearchWord,
+      allactivity: [],
+      info : null
       
     }
+ },
+  created() {
+    //console.log(this.$store)
+    this.$store.dispatch('loadData') // dispatch loading
   },
     computed: {
         filteredActivity () {
@@ -27,7 +35,9 @@ export default {
                 console.log(error)
             }
         }
-    }
+    },
+
+
 }
 </script>
 <style scoped>

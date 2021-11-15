@@ -2,7 +2,7 @@
     <div>
         <div class="card">
             <span  class="popular font-police" v-if='activities.popular === true'>POPULAIRE</span>
-            <img class="img" :src='activities.img' alt="">
+            <img class="img" :src="require(`~/assets/img/${activities.img}.jpg`)" alt="">
             <div class="card-content" :class="{  contentUp: show === true }">
                 <div class="btn" @click="show = !show">
                     <!--icone flèche-->
@@ -42,6 +42,11 @@ export default {
         return {
             show: false
         }
+    },
+    computed : {
+    imageSource() {
+      return require(`~/assets/img/${this.imageName}.jpg`)
+    },
     }
 }
 // en attente du back pour dev cete page

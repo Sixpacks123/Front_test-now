@@ -1,5 +1,6 @@
+
 export const state = () => ({
-    allActivity: [
+    allActivity: [/*
         {
             TitleActivity:'Parapente',
             city: 'Annecy',
@@ -43,7 +44,7 @@ export const state = () => ({
             img:require('~/assets/img/dubai.jpg'),
             popular: true,
             category:'Montagne'
-        }
+        }*/
     ],
     activity:{},
     category:{},
@@ -82,7 +83,10 @@ export const mutations = {
         category = category.toLowerCase()
         state.filteredActivity = state.allActivity.filter((activity) =>{ return activity.category.toLowerCase().includes(category) })
         
-    }
+    },
+    updateActivity(state, allActivity) {
+        state.allActivity = allActivity
+      },
 }
 
 export const actions = {
@@ -91,6 +95,12 @@ export const actions = {
       },
       filteredBycategory ({ commit}, category){
           commit('filteredBycategory', category)
+      },  loadData({commit}) {
+        this.$axios.get('http://localhost:8080/allactivity').then((response) => {
+          // console.log(response.data, this)
+          commit('updateActivity', response.data)
+          
+        })
       }
 
     }
