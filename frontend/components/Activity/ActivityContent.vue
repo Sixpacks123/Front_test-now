@@ -9,7 +9,6 @@
                 :icon='c.icon'
                 :class="{ activeicon: c.id=== activeItem, active: c.id === activeItem}"
                 @click.native="selectItem(c.id),SetCategorie(c.category)"
-                
                 >
                 </ActivityCard>
             </div>
@@ -40,10 +39,7 @@ export default {
             return this.$store.state.ListCategory.ListCategory
         }
     },
-    
 }
-
-//reste a dev la partie recherche d'activité
 </script>
 <style scoped>
 .card-content{

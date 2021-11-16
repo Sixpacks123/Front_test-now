@@ -9,3 +9,12 @@
        
     </div>
 </template>
+<script>
+export default {
+    //charger les deonnée du backend
+    created() {
+    //console.log(this.$store)
+    this.$store.dispatch('loadData') // dispatch loading
+  }
+}
+</script>

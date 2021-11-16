@@ -1,5 +1,5 @@
 <template>
-<header class="page-container">
+  <header class="page-container">
     <div class="container-nav">
        <HeaderNavContent/>
        <HeaderSearchBar v-model="search"/>

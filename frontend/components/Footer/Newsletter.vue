@@ -8,7 +8,6 @@
                 <font-awesome-icon class="icon" :icon="['fab', 'facebook']"/>
                 <font-awesome-icon class="icon" :icon="['fab', 'instagram']"/>
                 <font-awesome-icon class="icon" :icon="['fab', 'twitter']"/>
-                
             </div>
         </div>
     </div>

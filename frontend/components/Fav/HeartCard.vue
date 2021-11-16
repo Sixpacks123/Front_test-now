@@ -11,7 +11,7 @@
                 <div class="card-header">
                     <div class="card-description">
                         <h4 class="font-police">{{ activities.TitleActivity }}</h4>
-                        <span class="location font-police">{{ activities.city }}, {{ activities.country}}</span>
+                        <span class="location font-police">{{ activities.city }}, {{ activities.country }}</span>
                     </div>
                     <div class="card-description"> 
                         <p>{{activities.price}}€ </p>
@@ -20,16 +20,14 @@
                 <div class="card-header">
                     <div>
                         <GlobalRatingStar
-                    :rating=5
-                    :ratingValue='activities.rating'
-                    ></GlobalRatingStar>
+                        :rating=5
+                        :ratingValue='activities.rating'
+                        ></GlobalRatingStar>
                     </div>
                     <div>
                         <span class="font-police">Durée</span>
-                        <span class="font-police">{{  activities.time}}</span>
+                        <span class="font-police">{{  activities.time }}</span>
                     </div>
-                        
-                     
                 </div>
             </div>
         </div>
@@ -44,12 +42,11 @@ export default {
         }
     },
     computed : {
-    imageSource() {
-      return require(`~/assets/img/${this.imageName}.jpg`)
-    },
+        imageSource() {
+            return require(`~/assets/img/${this.imageName}.jpg`)
+        },
     }
 }
-// en attente du back pour dev cete page
 </script>
 <style scoped>
 .card{
@@ -72,7 +69,6 @@ export default {
     padding: 10px;
     transition: all .2s linear;
 }
-
 .contentUp{
     height: 80px;
 }
@@ -91,14 +87,12 @@ export default {
     transition: all .2s linear;
     cursor: pointer;
 }
-
 .img{
     width: 100%;
     height: 140px;
     object-position: center;
     object-fit: cover;
 }
-
 .card-header{
     display: flex;
     flex-direction: row;
@@ -110,16 +104,13 @@ export default {
     flex-direction: column;
     margin-bottom: 15px;
 }
-
 .icon{
     color: var(--color-gray);
     width: .7em;
 }
-
 .iconUp{
     transform: rotate(180deg);
 }
-
 .popular{
     background-color: var(--color-dark-cyan);
 color: #fff;
@@ -137,5 +128,4 @@ letter-spacing: 1px;
 color: #999;
 margin-top: 5px;
 }
-
 </style>

@@ -19,7 +19,6 @@
 .nav-right{
     display: flex;
     flex-direction: column;
-    
 }
 .nav-link{
     display: flex;

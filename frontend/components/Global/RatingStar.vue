@@ -1,7 +1,7 @@
 <template>
   <div class="svg">
       <svg
-        v-for="num in (rating).times() /* <-- This is awesome! */"
+        v-for="num in (rating).times()"
         :key="num"
         :class="{active: ratingSetValue > num }"
         version="1.1"
@@ -34,11 +34,9 @@ export default {
     Number.prototype.times = function() {
       let i = -1
       const arr = []
-
       while (++i < this) {
         arr.push(i)
       }
-
       return arr
     }
   }

@@ -46,14 +46,12 @@ export default {
        font-size: 1.2em;
        font-weight: 500;
        color: var(--color-dark);
-       
    }
    .reviews{
        font-style: italic;
        color: var(--color-mid-gray);
        font-size: 0.6em;
    }
-
    @media screen and (min-width: 1220px) {
        .card-reviews{
         width: 45%;
