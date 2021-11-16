@@ -1,0 +1,26 @@
+[
+    {
+        "img": "fatima_mafoula",
+        "name":"Fatima Mafoula",
+        "reviews":"Grâce à Loisirama, j’ai pu participer à une superbe balade en montagne avec toute la famille pour un prix imbattable, merci !",
+        "rating":3
+    },
+    {
+        "img": "philippe_castellier",
+        "name":"Philippe castellier",
+        "reviews":"Alors que j’étais en vacances aux Caraïbes avec un ami, nous avions voulu faire de l’hélicoptère, grâce à Loisirama, il nous a fallu moins de 5 minutes pour trouver notre bonheur !",
+        "rating":4
+    },
+    {
+        "img":"jean_jacques_leroy",
+        "name":"Jean-jacques Leroy",
+        "reviews":"Je rêvais de faire une balade sur des chameaux. En seulement trois cliques, j’ai pu réaliser ce rêve ! C’était un moment génial de partage et de beauté, merci Loisirama !",
+        "rating":5
+    },
+    {
+        "img":"peneloppe_du_flantier",
+        "name":"Pénélope Du Flantier",
+        "reviews":"Nous avons trouvé tout ce que nous recherchions sur ce site avec mon mari pour notre nuit de noce : de la plongée sous-marine, du ski nautique et j’en passe.. Je conseille fortement Loisirama !",
+        "rating":4
+    }
+]

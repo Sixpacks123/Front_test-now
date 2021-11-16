@@ -18,11 +18,7 @@
 </template>
 <script>
 export default {
-  name: 'RatingStar',
-  props: {
-    rating: { type: Number, default: 5 },
-    ratingValue: { type: Number, default: 0 }
-  },
+  props: ['rating', 'ratingValue'],
   data() {
     return {
       ratingSetValue: 0

@@ -19,10 +19,10 @@
                 </div>
                 <div class="card-header">
                     <div>
-                        <GlobalRatingStar
+                        <GlobalRating
                         :rating=5
                         :ratingValue='activities.rating'
-                        ></GlobalRatingStar>
+                        ></GlobalRating>
                     </div>
                     <div>
                         <span class="font-police">Durée</span>

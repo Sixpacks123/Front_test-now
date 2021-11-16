@@ -1,6 +1,6 @@
 <template>
     <article class="card-reviews">
-           <img class="customer-img" :src="image" alt="">
+           <img class="customer-img" :src="require(`~/assets/img/${image}.jpg`)" alt="">
         <div>
             <div>
                 <p class="name font-police">{{name}}</p>
@@ -9,21 +9,16 @@
               <p class="reviews font-police">"{{reviews}}"</p>
             </div>
             <div>
-                <GlobalRatingStar
+                <GlobalRating
                 :rating=5
                 :ratingValue="rating"
-                ></GlobalRatingStar>
+                ></GlobalRating>
             </div>
         </div>
     </article>
 </template>
 <script>
-import GlobalRatingStar from '../Global/RatingStar.vue'
 export default {
-    name: 'Card',
-    components: {
-        GlobalRatingStar
-    },
     props: ['image','name','reviews','rating']
 }
 </script>
