@@ -1,7 +1,7 @@
 
 
 export const state = () => ({
-    ListCategory: [
+    ListCategory: [/*
         {
             id: 1,
             name: 'Montagne',
@@ -31,7 +31,7 @@ export const state = () => ({
             name : 'Aérien',
             icon : ['fas','helicopter'],
             category:'Aerien'
-        }
+        }*/
     ]
 })
 
@@ -40,7 +40,16 @@ export const state = () => ({
 export const mutations = {
       toggle(state, c) {
         c.done = !c.done
+      },
+      updateCategory (state,ListCategory){
+          state.ListCategory = ListCategory
       }
 }
 
-
+export const actions = {
+    loadData({commit}) {
+        this.$axios.get('http://localhost:3001/activityCategory').then((response) =>{
+            commit('updateCategory', response.data)
+        })
+    }
+}

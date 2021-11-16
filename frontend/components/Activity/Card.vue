@@ -1,6 +1,6 @@
 <template>
     <div class="card" >
-        <font-awesome-icon class="icon" :icon="icon"/>
+        <font-awesome-icon class="icon" :icon="['fas',icon]"/>
         <p class="font-police">{{name}}</p>
     </div>
 </template>

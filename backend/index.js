@@ -1,12 +1,14 @@
-const express = require('express')
 
-const app = express()
-const allactivity = require('./allactivity.json')
+// Chargement de expresse et du parser json 
+const express = require('express');
+const bodyParser = require('body-parser');
 
-app.use(express.json())
+// création de l'instance
+const app = express();
 
-
-//Définition des CORS Middleware 
+const fs = require('fs');
+//Définition des CORS Middleware
+//marche pour un envirnoment dev mais pas pour une prod car peu de sécurité
 app.use(function(req, res, next) {
     res.setHeader("Access-Control-Allow-Headers", "X-Requested-With,content-type, Accept,Authorization,Origin");
     res.setHeader("Access-Control-Allow-Origin", "*");
@@ -14,36 +16,24 @@ app.use(function(req, res, next) {
     res.setHeader("Access-Control-Allow-Credentials", true);
     next();
   });
-app.get('/allactivity', (req,res) => {
-    res.status(200).json(allactivity)
-})
 
-app.get('/allactivity/:id', (req,res) => {
-    const id = parseInt(req.params.id)
-    const activity = allactivity.find(activity => activity.id === id)
-    res.status(200).json(activity)
-})
+//  config de expresse avec le parser 
+// Ecoute du json 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-app.post('/allactivity', (req,res) => {
-    allactivity.push(req.body)
-    res.status(200).json(allactivity)
-})
-app.put('/allactivity/:id', (req,res) => {
-    const id = parseInt(req.params.id)
-    let activity = allactivity.find(activity => activity.id === id)
-    activity.TitleActivity =req.body.TitleActivity,
-    activity.country =req.body.country,
-    activity.type =req.body.type,
-    res.status(200).json(activity)
-})
+//Ecoute des routes 
+const routes = require('./routes/routes.js')(app, fs);
 
-app.delete('/allactivity/:id', (req,res) => {
-    const id = parseInt(req.params.id)
-    let activity = allactivity.find(activity => activity.id === id)
-    allactivity.splice(allactivity.indexOf(activity),1)
-    res.status(200).json(allactivity)
-})
+// Lancement de l'api sur le port 3001
+const server = app.listen(3001, () => {
+  console.log('listening on port %s...', server.address().port);
+});
 
-app.listen(8080, () => {
-    console.log("Serveur à l'écoute")
-})
+
+
+
+
+
+
+

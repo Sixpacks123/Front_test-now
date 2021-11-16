@@ -39,6 +39,9 @@ export default {
             return this.$store.state.ListCategory.ListCategory
         }
     },
+    mounted(){
+        this.$store.dispatch('ListCategory/loadData')
+    }
 }
 </script>
 <style scoped>

@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Montagne",
+        "icon": "hiking",
+        "category":"Montagne"
+    },
+    {
+        "id": 2,
+        "name" : "Sport d'hiver",
+        "icon" : "skiing",
+        "category" : "Hiver"
+    },
+    {
+        "id": 3,
+        "name" : "Sport aquatique",
+        "icon" : "swimmer",
+        "category" : "Aquatique"
+    },
+    {
+        "id": 4,
+        "name" : "Sport d'équipe",
+        "icon": "volleyball-ball",
+        "category":"Equipe"
+    },
+    {
+        "id": 5,
+        "name" : "Aérien",
+        "icon" : "helicopter",
+        "category":"Aerien"
+    }
+]

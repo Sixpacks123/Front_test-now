@@ -8,7 +8,7 @@ export const state = () => ({
             price:'80',
             rating:3,
             time: '1h30',
-            img:require('~/assets/img/parapente.jpg'),
+            img:'blausee',
             popular: false,
             category:'Montagne'
         },
@@ -19,7 +19,7 @@ export const state = () => ({
             price:'Gratuit',
             rating:2,
             time: '3h',
-            img:require('~/assets/img/blausee.jpg'),
+            img:'blausee',
             popular: false,
             category:''
         },
@@ -30,7 +30,7 @@ export const state = () => ({
             price:'24',
             rating:4,
             time: 'Illimité',
-            img:require('~/assets/img/ski.jpg'),
+            img:'blausee',
             popular: true,
             category:'Ski'
         },
@@ -41,7 +41,7 @@ export const state = () => ({
             price:'41',
             rating:4,
             time: 'Illimité',
-            img:require('~/assets/img/dubai.jpg'),
+            img:'blausee',
             popular: true,
             category:'Montagne'
         }*/
@@ -86,6 +86,7 @@ export const mutations = {
     },
     updateActivity(state, allActivity) {
         state.allActivity = allActivity
+        console.log(state.allActivity)
       },
 }
 
@@ -96,8 +97,8 @@ export const actions = {
       filteredBycategory ({ commit}, category){
           commit('filteredBycategory', category)
       },  loadData({commit}) {
-        this.$axios.get('http://localhost:8080/allactivity').then((response) => {
-          // console.log(response.data, this)
+        this.$axios.get('http://localhost:3001/activity').then((response) => {
+           console.log(response.data, this)
           commit('updateActivity', response.data)
           
         })
@@ -105,3 +106,6 @@ export const actions = {
 
     }
 
+
+
+    
