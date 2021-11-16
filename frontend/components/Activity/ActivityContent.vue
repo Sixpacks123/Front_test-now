@@ -31,7 +31,7 @@ export default {
          ...mapMutations({
             toggle: 'ListCategory/toggle'
     }),SetCategorie(item){
-        this.$store.dispatch('filteredBycategory',item)
+        this.$store.dispatch('Activity/filteredBycategory',item)
     } 
     },
     computed: {

@@ -86,7 +86,6 @@ export const mutations = {
     },
     updateActivity(state, allActivity) {
         state.allActivity = allActivity
-        console.log(state.allActivity)
       },
 }
 
@@ -98,7 +97,6 @@ export const actions = {
           commit('filteredBycategory', category)
       },  loadData({commit}) {
         this.$axios.get('http://localhost:3001/activity').then((response) => {
-           console.log(response.data, this)
           commit('updateActivity', response.data)
           
         })

@@ -14,7 +14,7 @@ export default {
     //charger les deonnée du backend
     created() {
     //console.log(this.$store)
-    this.$store.dispatch('loadData') // dispatch loading
+    this.$store.dispatch('Activity/loadData') // dispatch loading
   }
 }
 </script>

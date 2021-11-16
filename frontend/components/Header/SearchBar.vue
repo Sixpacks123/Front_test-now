@@ -20,10 +20,10 @@ export default {
     computed: {
      searchWord: {
       get () {
-        return this.$store.getters.searchWord
+        return this.$store.getters['Activity/searchWord']
       },
       set (value) {
-        this.$store.dispatch('filtered_Activity', value)
+        this.$store.dispatch('Activity/filtered_Activity', value)
       }
     }
   }

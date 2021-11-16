@@ -14,7 +14,7 @@
                         <span class="location font-police">{{ activities.city }}, {{ activities.country }}</span>
                     </div>
                     <div class="card-description"> 
-                        <p>{{activities.price}}€ </p>
+                        <p class="font-police">{{activities.price}}€ </p>
                     </div>
                 </div>
                 <div class="card-header">

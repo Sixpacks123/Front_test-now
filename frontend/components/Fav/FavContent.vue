@@ -17,7 +17,7 @@ export default {
         filteredActivity () {
             try {
                 console
-                return (this.$store.getters.getFilteredActivity || this.$store.state.allActivity || this.$store.getters.getFilteredCategory)
+                return (this.$store.getters['Activity/getFilteredActivity'] || this.$store.state.Activity.allActivity || this.$store.getters['Activity/getFilteredCategory'])
             } catch (error) {
                 console.log(error)
             }
