@@ -14,10 +14,10 @@ Projet réalisé dans le cadre d'un test pour un recrutement de stage Lors de ma
 
 ## Technologie 
 
-  + <img src="https://develop365.gitlab.io/nuxtjs-2.8.X-doc/en/logos/nuxt-emoji.png" height="40" width="40"> nuxt js <br> 
+  + <img src="https://develop365.gitlab.io/nuxtjs-2.8.X-doc/en/logos/nuxt-emoji.png" height="20" width="20"> nuxt js <br> 
   + <img src="https://img2.freepng.fr/20180816/rcw/kisspng-cascading-style-sheets-logo-clip-art-css3-html-5b7617f67bd3d6.3499284915344660385072.jpg" height="20" width="20"> css vanilla <br> 
-  + <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" width="40"> node <br> 
-  + <img src="https://user-images.githubusercontent.com/7110136/29002857-9e802f08-7ab4-11e7-9c31-604b5d0d0c19.png" width="40"> vuex <br> 
+  + <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" width="30"> node <br> 
+  + <img src="https://user-images.githubusercontent.com/7110136/29002857-9e802f08-7ab4-11e7-9c31-604b5d0d0c19.png" height="20" width="20"> vuex <br> 
   +  expresse <br> 
 
 
@@ -51,3 +51,5 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
+<img src="http://cdn.onlinewebfonts.com/svg/img_519962.png" width="20"> *Projet d'une entreprise fictive*
+ 
