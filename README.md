@@ -1,6 +1,6 @@
 # Front_test-now
 
-Projet réalisé dans le cadre d'un test pour un recrutement de stage Lors de ma deuxième année de BTS SIO(Service Informatique aux Organisation)
+Projet réalisé dans le cadre d'un test de recrutement pour un stage lors de ma deuxième année de BTS SIO(Service Informatique aux Organisation)
 
 ## Maquette Loisira
 [frontend_test_mov](http://odexia.s3-website.eu-west-3.amazonaws.com/)
